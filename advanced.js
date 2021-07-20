@@ -44,6 +44,7 @@ console.log(home,name,phone);
 
 
 const id = [12,30,40,15,67,45,67,89,09,23,56,78,90,45,67,89];
+
 console.log(id[20]);
 
 const price = undefined;
@@ -105,4 +106,33 @@ console.log(result3);
 
 const findNumber = numbers.find(x=>x<5);
 console.log(findNumber);
+
+
+
+// object use map , filter, and map
+
+
+const student = [
+
+{id: 24, name:'sumon'},
+{id: 40, name:'Atiq'},
+{id: 54, name:'Sujjon'},
+{id: 56, name:'Badsha'}
+
+
+]
+
+
+
+
+const allName = student.map(np=>np.name);
+const ids = student.map(np=>np.id);
+console.log(allName);
+console.log(ids);
+
+const idbig= student.filter(n=>n.id>24);
+console.log(idbig);
+
+const finds = student.find(np=>np.id>40);
+console.log(finds);
 
