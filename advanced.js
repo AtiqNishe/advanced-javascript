@@ -53,3 +53,56 @@ let tomatoPrice = 100;
 console.log(tomatoPrice);
 tomatoPrice = null;
 console.log(tomatoPrice);
+
+
+
+// Advanced js dubole equal and three equal
+
+const num1 = 20;
+const num2 ="20";
+const isRight = true;
+
+if(num1 != num2 && isRight){
+   console.log('This condition is true');
+}
+else{
+   console.log('This condition is false');
+}
+
+// Advanced ja map(), and filter() function,
+
+
+const numbers = [2, 3, 4, 5, 6, 7,8];
+// const output = [];
+// for (let index = 0; index < numbers.length; index++) {
+//    const element = numbers[index];
+//    const result = element*element;
+//    output.push(result);
+
+   
+// }
+
+
+// console.log(output);
+
+
+const result = numbers.map((ele)=>ele*ele);
+ 
+
+
+//console.log(result); use filter
+
+const result2 = numbers.map(x=>x*x);
+console.log(result2);
+
+const result3 = numbers.filter(x=>x<5);
+console.log(result3);
+
+
+
+// use find function
+
+
+const findNumber = numbers.find(x=>x<5);
+console.log(findNumber);
+
